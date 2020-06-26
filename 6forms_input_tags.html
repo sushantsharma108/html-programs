@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms & Input Tags</title>
+</head>
+<body>
+    <h2>This is HTML forms tutorials</h2>
+    <!-- In below line, suppose you're using a backend and you're gonna submit this form to the backend. -->
+    <form action="backend.php">
+        <!-- The action attribute submits the form data to the backend.php -->
+        <label for="name">First Name</label>
+        <div>
+            <!--div tag introduce a division in a webpage and it is a block element.-->
+            <input type="text" name="myfname" id="name">
+        </div><br>
+        <div>
+            Last Name: <input type="text" name="mylname">    
+        </div><br>
+        <div>
+            Email: <input type="email" name="myemail">    
+        </div><br>
+        <div>
+            Date:<input type="date" name="myDate">    
+        </div><br>
+        <div>
+            Bonus:<input type="number" name="myBonus">    
+        </div><br>
+        <div>
+            Are You Eligible?:<input type="checkbox" name="myEligibility" checked>
+            <!-- In above line, checked is written to checked the checkbox by default.-->
+        </div><br>
+        <div>
+            Gender: Male<input type="radio" name="myGender">
+            Female<input type="radio" name="myGender">
+            Other<input type="radio" name="myGender">    
+        </div><br>
+        <div>
+            Write about Yourself:<br><textarea name="" id="" cols="30" rows="10"></textarea>
+        </div>
+        <div>
+            <label for="car">Car:</label>
+            <select name="myCar" id="car">
+                <option value="honda">Honda City</option>
+                <option value="hyundai">Creta</option>
+                <option value="elantra">Elantra</option>
+                <option value="maruti" selected>WagonR</option>
+                <!-- selected attribute is used to by default select an item in the dropdown menu. -->
+            </select>
+        </div>
+        <div>
+            <input type="submit" value="Submit">    
+        </div><br>
+    </form>
+</body>
+</html>
